@@ -46,9 +46,9 @@ console.log(data, "data")
     res.send(user)
   });
 
-  const port = 8085;
-  app.listen(port, () => {
-    console.log('server running on port ${/port}');
-  });
+ // const port = 8085;
+ // app.listen(port, () => {
+  //  console.log('server running on port ${/port}');
+ // });
 
 module.exports = app;

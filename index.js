@@ -41,10 +41,10 @@ app.use("/api", user)
 //     res.send(users)
 //   });
 
-  const port = 8086; // Choose any port you prefer
+const port = process.env.PORT || 8086; // Choose any port you prefer
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${8086}`);
+  console.log(`Server is listening on port ${port}`);
 });
 
 module.exports = app;
