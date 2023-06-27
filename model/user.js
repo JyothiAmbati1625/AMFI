@@ -28,15 +28,15 @@ const userSchema = new Schema({
         required: true,
     
     },
-    gender: "string"
-
-    
-    
-  });
+    gender: "string",
+    trackingDetails: [{ type: mongoose.Schema.Types.ObjectId, ref: 'trackingdetails' }]
+    });
 
   //"{  firstName: {{context.entities.newUser_SignInForm[0].value}},  "lastName": {{context.entities.newUser_SignInForm[1].value}},\n  \"phoneNumber\": {{context.entities.newUser_SignInForm[2].value}},  "gender": {{context.entities.newUser_SignInForm[5].value}},  "age": 24, "email": {{context.entities.newUser_SignInForm[3].value}},  "dataofbirth": {{context.entities.newUser_SignInForm[4].value}}}"
   
   const User = mongoose.model('User', userSchema);
+
+  
 
   module.exports.User = User;
 

@@ -1,1 +1,0 @@
-https://bots.kore.ai/webclient/c12aeef3975e48ed8de9ad08b5a9d6a6f5d3810b9e994de68fdeaf02c0fe7f27stf6

@@ -10,8 +10,12 @@ app.use(express.json());
 mongoose.connect(url1,{useNewUrlParser:true}).then(console.log("Mongoose connected")).catch((error)=>console.log("error occured", error))
 
 const user = require('./routes/users')
+//const userdata = require('./routes/trackingDetails')
 
 app.use("/api", user)
+//app.use("/api", userdata)
+
+
 // app.get('/api/users', (req, res) => {
 //     // Handle the GET request
 //     // Return the data
